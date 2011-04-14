@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER/App Engine (3)"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/asm-3.2.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/asm-analysis-3.2.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/asm-commons-3.1.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/asm-tree-3.2.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/asm-util-3.2.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/console-1.5-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/console-engine-1.5-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/antlr-2.7.6.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/groovy-1.7.8.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/slf4j-log4j12-1.6.1.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/wicket-core-1.5-20110318.210730-264.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/wicket-extensions-1.5-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/wicket-request-1.5-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/wicket-util-1.5-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/clojure-1.2.0.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/console-templates-1.5-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+</classpath>
