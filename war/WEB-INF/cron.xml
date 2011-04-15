@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cronentries>
+
+  <cron>
+    <url>/</url>
+    <description>Keep application from being shut down</description>
+    <schedule>every 1 minutes</schedule>
+  </cron>
+
+  <cron>
+    <url>/sessionTimeout</url>
+    <description>Session Timeout</description>
+    <schedule>every 12 hours</schedule>
+  </cron>
+  
+</cronentries>
