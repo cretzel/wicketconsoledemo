@@ -8,7 +8,6 @@
 	<classpathentry kind="lib" path="war/WEB-INF/lib/asm-commons-3.1.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/asm-tree-3.2.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/asm-util-3.2.jar"/>
-	<classpathentry kind="lib" path="war/WEB-INF/lib/console-1.5-SNAPSHOT.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/console-engine-1.5-SNAPSHOT.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/antlr-2.7.6.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/groovy-1.7.8.jar"/>
@@ -22,5 +21,6 @@
 	<classpathentry kind="lib" path="war/WEB-INF/lib/clojure-1.2.0.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/console-templates-1.5-SNAPSHOT.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/console-1.5-SNAPSHOT.jar"/>
 	<classpathentry kind="output" path="war/WEB-INF/classes"/>
 </classpath>

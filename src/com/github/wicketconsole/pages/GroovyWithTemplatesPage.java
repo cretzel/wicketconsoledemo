@@ -10,37 +10,29 @@ import org.wicketstuff.console.templates.ScriptTemplate;
 public class GroovyWithTemplatesPage extends ConsoleBasePage {
 
     private static final long serialVersionUID = 1L;
-    private final GroovyScriptEngineWithTemplatesPanel enginePanel;
+    private final GroovyScriptEngineWithTemplatesPanel panel;
 
     public GroovyWithTemplatesPage() {
 
         final IDataProvider<ScriptTemplate> dp = new ListDataProvider<ScriptTemplate>(
                 PackagedScriptTemplates.getPackagedScriptTemplates(Lang.GROOVY));
-        enginePanel = new GroovyScriptEngineWithTemplatesPanel("console", null,
-                dp) {
+        panel = new GroovyScriptEngineWithTemplatesPanel("console", null, dp);
 
-            @Override
-            protected void onInitialize() {
-                super.onInitialize();
-                getEnginePanel()
-                        .setInput(
-                                "import org.apache.wicket.ajax.AjaxRequestTarget;\n"
-                                        + "\n"
-                                        + "def templateId = 1\n"
-                                        + "def host = \"http://scriptdonkey.appspot.com\"\n"
-                                        + "def url = new java.net.URL(\"${host}/api/templates/${templateId}\")\n"
-                                        + "def con = url.openConnection()\n"
-                                        + "con.setConnectTimeout(10000)\n"
-                                        + "\n"
-                                        + "def xml = new XmlSlurper().parse(con.getContent())\n"
-                                        + "component.setInput(xml.script.text())\n"
-                                        + "AjaxRequestTarget.get().add(component.getInputTf())\n");
+        panel.getEnginePanel()
+                .setInput(
+                        "import org.apache.wicket.ajax.AjaxRequestTarget;\n"
+                                + "\n"
+                                + "def templateId = 1\n"
+                                + "def host = \"http://scriptdonkey.appspot.com\"\n"
+                                + "def url = new java.net.URL(\"${host}/api/templates/${templateId}\")\n"
+                                + "def con = url.openConnection()\n"
+                                + "con.setConnectTimeout(10000)\n"
+                                + "\n"
+                                + "def xml = new XmlSlurper().parse(con.getContent())\n"
+                                + "component.setInput(xml.script.text())\n"
+                                + "AjaxRequestTarget.get().add(component.getInputTf())\n");
 
-            }
-
-        };
-
-        add(enginePanel);
+        add(panel);
 
     }
 
