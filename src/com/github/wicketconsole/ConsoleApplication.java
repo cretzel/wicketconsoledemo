@@ -58,7 +58,9 @@ public class ConsoleApplication extends WebApplication {
     @Override
     protected WebRequest newWebRequest(final HttpServletRequest servletRequest,
             final String filterPath) {
-        watcher.check();
+        if (getConfigurationType() == RuntimeConfigurationType.DEVELOPMENT) {
+            watcher.check();
+        }
         return super.newWebRequest(servletRequest, filterPath);
     }
 
